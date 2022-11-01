@@ -3,7 +3,7 @@ apiVersion: apps.openshift.io/v1
 metadata:
   annotations:
   name: httpd-example
-  namespace: "{{ .Values.environmentName }}"
+  namespace: "{{ .Values.environmentName }}-test"
   labels:
     app: httpd-example
 spec:
@@ -25,7 +25,7 @@ spec:
           - httpd-example
         from:
           kind: ImageStreamTag
-          namespace: "{{ .Values.environmentName }}"
+          namespace: "{{ .Values.environmentName }}-test"
           name: 'httpd-example:latest'
     - type: ConfigChange
   replicas: 1

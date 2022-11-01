@@ -4,7 +4,7 @@ metadata:
   annotations:
     description: Defines how to build the application
   name: httpd-example
-  namespace: "{{ .Values.environmentName }}"
+  namespace: "{{ .Values.environmentName }}i-test"
 spec:
   output:
     to:

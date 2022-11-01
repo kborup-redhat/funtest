@@ -4,7 +4,7 @@ metadata:
   annotations:
     description: Exposes and load balances the application pods
   name: httpd-example
-  namespace: "{{ .Values.environmentName }}"
+  namespace: "{{ .Values.environmentName }}-test"
 spec:
   ports:
   - name: web
