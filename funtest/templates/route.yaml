@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: httpd-example-route
+  namespace: "{{ .Values.environmentName }}-test"
+spec:
+  host: "iwork"
+  to:
+    kind: Service
+    name: httpd-example
+
