@@ -4,7 +4,7 @@ metadata:
   name: httpd-example-route
   namespace: "{{ .Values.environmentName }}-test"
 spec:
-  host: "iwork"
+  host: "iwork.apps.ocp4.bofh.ninja"
   to:
     kind: Service
     name: httpd-example
