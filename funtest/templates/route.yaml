@@ -2,7 +2,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: httpd-example-route
-  namespace: "{{ .Values.environmentName }}-test"
+  namespace: "{{ .Values.environmentName }}-dev"
 spec:
   host: "iwork.apps.ocp5.bofh.ninja"
   to:
