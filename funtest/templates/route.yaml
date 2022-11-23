@@ -3,9 +3,13 @@ kind: Route
 metadata:
   name: httpd-example-route
   namespace: "{{ .Values.environmentName }}-dev"
+  kubernetes.io/tls-acme: "true"
 spec:
   host: "iwork.apps.ocp5.bofh.ninja"
+  tls:
+    insecureEdgeTerminationPolicy: Allow
+    termination: edge
   to:
     kind: Service
     name: httpd-example
-
+  wildcardPolicy: none
