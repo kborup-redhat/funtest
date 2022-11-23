@@ -13,4 +13,3 @@ spec:
   to:
     kind: Service
     name: httpd-example
-  wildcardPolicy: none
