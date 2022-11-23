@@ -1,9 +1,10 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
+  annotations:
+    kubernetes.io/tls-acme: "true"
   name: httpd-example-route
   namespace: "{{ .Values.environmentName }}-dev"
-  kubernetes.io/tls-acme: "true"
 spec:
   host: "iwork.apps.ocp5.bofh.ninja"
   tls:
