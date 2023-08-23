@@ -6,7 +6,7 @@ metadata:
   name: httpd-example-route
   namespace: "rti"
 spec:
-  host: "iwork.apps.ocp5.bofh.ninja"
+  host: "iwork.apps.cluster-kpmc8.kpmc8.sandbox944.opentlc.com"
   tls:
     insecureEdgeTerminationPolicy: Allow
     termination: edge
